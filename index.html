@@ -22,23 +22,19 @@
 
     #map { position: absolute; inset: 0; }
 
-    /* Popup styling */
     .mapboxgl-popup-content {
-      padding: 15px 15px 10px 15px; /* reduced bottom padding */
+      padding: 15px 15px 10px 15px;
       border-radius: 20px;
     }
 
-    .mapboxgl-popup-tip {
-      display: none;
-    }
+    .mapboxgl-popup-tip { display: none; }
 
-    /* Directions link */
     .mapboxgl-popup-content a {
       display: inline-flex;
       align-items: center;
-      gap: 4px; /* reduced by 2px */
+      gap: 4px;
       font-size: 12px;
-      font-weight: 600; /* bold */
+      font-weight: 600;
       color: #3899EC;
       text-decoration: none;
       outline: none !important;
@@ -46,7 +42,6 @@
       border: none !important;
     }
 
-    /* Marker icon before Directions */
     .directions-icon {
       width: 14px;
       height: 14px;
@@ -67,11 +62,10 @@
     mapboxgl.accessToken = "pk.eyJ1IjoicmVtbWlhZ2JlYmkiLCJhIjoiY21odHRrYTQzMTk0bjJqcjE1b2xhZ2FraSJ9.nTCz33gX0gQt3T4A6VD0oQ";
 
     const carParks = [
-      { name: "Main Parking",  coords: [-1.741681169995867, 53.400323549479204] },
-      { name: "Alternative 1", coords: [-1.7415555555555555, 53.398] },
-      { name: "Alternative 2", coords: [-1.7405602541940284, 53.3975013703475] },
-      { name: "Alternative 3", coords: [-1.7396111111111112, 53.396166666666666] },
-      { name: "Alternative 4", coords: [-1.7304308779114999, 53.39311015688274] }
+      { name: "Main Parking",  coords: [-1.8689178281704162, 53.43294571969499] },
+      { name: "Alternative 1", coords: [-1.856806, 53.432667] },
+      { name: "Alternative 2", coords: [-1.850374700508498, 53.432955195575865] },
+      { name: "Alternative 3", coords: [-1.846444, 53.431722] }
     ];
 
     const map = new mapboxgl.Map({
